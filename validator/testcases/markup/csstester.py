@@ -163,7 +163,7 @@ def _run_css_tests(err, tokens, filename, line_start=0, context=None):
                  filename)
     if downloads_indicator_selectors:
         title = "The `#downloads-indicator` node was removed from the DOM."
-        err.error(("testcases_markup_csstester",
+        err.warning(("testcases_markup_csstester",
                      "test_css_file",
                      "downloads_indicator"),
                     title,
